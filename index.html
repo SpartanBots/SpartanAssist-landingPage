@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SpartanBot Splash Page</title>
+	<link rel="stylesheet" type="text/css" href="20170410_botcreation.css">
+
+<!-- 
+
+NOTE: See README.md file for past conversation hightlights to create additional thought for the page.  (it may edit out later, just used for creation purposes)
+
+
+NOTE: create backToTop button to get back to the top
+
+This is based on what I'm seeing and could be broken down further 
+In addtion to seeing it via Wirify (app recommended within Computer Science Guide on FCC from P1xt:
+
+************************** Paypal Website ***************************************
+https://www.paypal.com/slack/#about
+
+Based on Wirify 
+- I could not access it
+
+https://www.paypal.com/slack/#about - Actual Layout
+
+- header1 with logo on left and login on right
+- image background with header / paragraph / button on the left side (split whole block in half, then center left side)
+- navigation below background image that links the remaining page (3 links 3 remaining blocks)
+
+- First Section 
+	- medium header and paragraph on left side
+	- image on the rigth side
+
+- Next Section 
+	- centered information with title (with spacing at the bottom to separate it from below paragraphs) / 3 paragraphs with padded color in background with text and margin top/right/bottom with some spacing given for the text
+
+- Third Section
+	- centered Title / 3 list items in same column / button 
+
+- footer 
+	- links
+	- copyright / company name or logo name / privacy link / legal link
+
+
+
+************************** Lion bot Website ***************************************
+https://lion-bot.herokuapp.com/ 
+
+Actual Layout and Wirify layout viewr
+
+- giant image takes up left and right sides of header, with header1 and 3 paragraphs 
+and button below
+- Screenshot image of activity the bot can do  with paragraph on right hand side
+- header / paragraph / list of 5 unordered lists without buttons or any type like that
+
+- footer with logo and works and link
+
+
+
+
+************************** MDN bot Website ***************************************
+https://vejather.github.io/mdn-bot-landing-page/
+
+https://vejather.github.io/mdn-bot-landing-page/ 
+
+Actual Layout and Wirify layout viewer
+
+- header has image on left and header / span / image w/ anchor tag / link drectly attached below the header
+- 3 paragraphs with image w/ anchor tag on left / image on right
+- header2 (centered) same line with image on imediate right side.  looks like they are z-indexed with header on top
+- may be the same section as above...  few paragraphs on the left, header4 or 5, a few paragraphs with secial features as if defined area with definition 
+
+- footer link button and logo image left side / header4 and social media links right side
+
+
+
+
+
+
+************************** fireflies Website ***************************************
+https://fireflies.ai/
+
+<header> see through at the top (fixed)...  (I have to continue looking over website for ideas)
+
+
+
+
+********************* CLAUDIA BOT BUILDER Website *************************************
+https://claudiajs.com/claudia-bot-builder.html
+
+...
+
+-->
+
+</head>
+<body>
+<div id="container">
+
+<header>
+<nav>
+	<!-- Logo on the left side and links on the right, or in a sense of the splash bot page landing page.  The bot on the right and the name  -->
+	<img src="#" alt="" /> 
+
+
+	<!-- Tagline (I seen it created as a span somewhere, but can be changed) -->
+	<span>SpartanAssist,  a message scheduler and meeting assistant bot</span>
+
+</nav>
+</header>
+
+<section>
+	<!-- It's good to have an alt attribute for non image browser and I still think even for SEO (left side) -->
+	<img src="#" alt="" /> 
+
+
+	<h1>Welcome to SpartanBot Page</h1>
+	<p>I put in laurum ipsum to fill this in, we can figure out what to fill this in with as we get further in details.</p>
+</section>
+
+
+<!-- 	
+Additional Header / list if needed
+<section>
+	<h3></h3>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</section>
+
+-->
+
+
+
+
+<!-- 
+This section is from the app page where the bot was created.  I put it all in a section for now...
+
+looking to make it similar to the api website that has the app: 
+https://api.slack.com/apps/A4Q27TTRA/
+-->
+<section>
+
+	<h1>App Name: SpartanAssist</h1>
+	<h3>A message scheduler and meeting assistant bot</h3>
+
+	<h5>Team: SpartanBots</h5>
+	<h5>Distribution Status: Not distributed</h5>
+
+	<h1>Settings</h1>
+	Basic Information
+
+
+	<h3>Colaborators</h3>
+	<ul>
+	<li>Frances</li>
+	<li>Sadiq Abubakar</li>
+	<li>Kingsley Cross</li>
+	</ul>
+
+
+	<a href="https://slack.com/oauth/authorize?&client_id=160073494036.160075945860&team=T4Q25EJ12&install_redirect=install-on-team&scope=incoming-webhook,bot,commands,chat:write:bot" class="button">Install App to Your Team</a>
+	<p>Install your app to your Slack team to test your app and generate the tokens you need to interact with the Slack API. You will be asked to authorize this app after clicking Install App to Team.</p>
+
+	<h4>Distribution</h4>
+	<p>Share app with team / other teams</p>
+
+
+	<h1>Features</h1>
+
+	<h3><a href="https://api.slack.com/apps/A4Q27TTRA/incoming-webhooks">Incoming Webhooks</a></h3>
+
+	<a href="https://spartanbots.slack.com/oauth/167290870754.ff7edd78a3?team=1" class="button">Add new Webhook to Team</a>
+
+	<h4>Webhook URLs for Your Team</h4>
+
+
+
+	<h3><a href="https://api.slack.com/apps/A4Q27TTRA/interactive-messages">Interactive Messages</a></h3> 
+	<button>Enable Interactive Messages</button>
+
+
+
+	<h3><a href="https://api.slack.com/apps/A4Q27TTRA/slash-commands">Slash Commands</a></h3>
+	<button>Create New Command</button>
+	<button>Copy Existing Command</button>
+
+
+
+	<h3><a href="https://api.slack.com/apps/A4Q27TTRA/oauth">OAuth & Permissions</a></h3>
+	<button>Install App To Team</button>
+
+	<h3><a href="https://api.slack.com/apps/A4Q27TTRA/event-subscriptions">Event Subscriptions</a></h3>
+
+	<h3>Enable Events</h3>  (on/off)
+	<p>Your app can subscribe to be notified of events in Slack (for example, when a user adds a reaction or creates a file) at a URL you choose. Learn more.</p>
+
+
+
+	<h3><a href="https://api.slack.com/apps/A4Q27TTRA/bots">Bot User(s)</a></h3>
+
+	<p>You can bundle a bot user with your app to interact with users in a more conversational manner. Learn more about how bot users work.</p>
+
+</section>
+
+
+
+<!--  
+This may go on either side left or right, maybe equivalent to side by side with above section
+-->
+<aside>	
+	<h3>The use of Spartan Bot (Bot Ideas)</h3>
+	<li>1. message scheduler</li>
+	<li>2. quora integration </li>
+	<li>3. read it later</li>
+	<li>4. project deadline countdown</li>
+	<li>5. spotify(or other music api) integration</li>
+</aside>
+
+
+
+
+
+
+<footer class="top">
+	<h3>FOLLOW US</h3>
+	<li><a href="#"><img src="#" />RSS Feed</a></li>
+	<li><a href="#"><img src="#" />Twitter</a></li>
+	<li><a href="#"><img src="#" />LinkedIn</a></li>
+	<li><a href="#"><img src="#" />Facebook</a></li>
+	<li><a href="#"><img src="#" />GooglePlus</a></li>
+</footer>
+
+
+<footer class="bottom">
+	<nav>
+		<a href="#">Terms of Use</a> |
+		<a href="#">Privacy Policy</a> |
+		<a href="#">Etc</a> |
+		<a href="#">Etc</a>
+	</nav>
+
+	<p>&copy; 2017 Spartan Bot - Koalas - splashPage-team-9</p>
+</footer>
+</div> <!-- end of div container -->
+</body>
+</html>

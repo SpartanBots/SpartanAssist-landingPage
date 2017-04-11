@@ -1,0 +1,17 @@
+/*
+Finally going back in with the creation of the form within CSS.  It has been a while.  Let's see the layout again.
+
+So back to creation. 
+
+
+*/
+
+
+a.button {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+
+	text-decoration: none;
+	color: initial;
+}
