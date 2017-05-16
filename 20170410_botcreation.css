@@ -1,11 +1,76 @@
 /*
 Finally going back in with the creation of the form within CSS.  It has been a while.  Let's see the layout again.
 
-So back to creation. 
+So back to creation.
 
-
+* {
+	border: solid;
+}
 */
 
+/* header/logo image */
+#imgHeader{
+/*	margin-left: 200px;
+	padding-top: 100px;
+*/
+	margin-bottom: -400px;
+	border: 2px solid green;
+}
+
+
+section, aside, footer > nav, footer > p {
+	margin-left: 150px;
+	margin-right: 150px;
+	border: 2px solid green;
+}
+
+footer > nav, footer > p {
+	margin-left: 150px;
+	margin-right: 150px;
+	border: 10px solid green;
+	color: white;
+}
+
+
+
+
+/* full navigation within header tag*/
+nav, .top, .bottom {
+	background-color: black;
+	color: white;
+}
+
+.headerTitle, .headerSubTitle {
+	color: white;
+	text-align: center;
+	font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
+	/*border: 2px solid green;*/
+}
+
+/* Create the font and make it bigger */
+.headerTitle {
+	margin-bottom: -15px; 
+/*	border: 2px solid green;
+*/
+}
+
+#tagline {
+	margin-left: 550px;
+	color: white;
+	/*border: 2px solid green;*/
+}
+
+
+button#headerButton {
+	margin-left: 550px;
+	border: 2px solid green;
+}
+
+{
+
+}
+
+/*  didn't comment this out and not sure what it's function is/was
 
 a.button {
 	-webkit-appearance: button;

@@ -4,210 +4,181 @@
 	<title>SpartanBot Splash Page</title>
 	<link rel="stylesheet" type="text/css" href="20170410_botcreation.css">
 
-<!-- 
-
-NOTE: See README.md file for past conversation hightlights to create additional thought for the page.  (it may edit out later, just used for creation purposes)
-
-
-NOTE: create backToTop button to get back to the top
-
-This is based on what I'm seeing and could be broken down further 
-In addtion to seeing it via Wirify (app recommended within Computer Science Guide on FCC from P1xt:
-
-************************** Paypal Website ***************************************
-https://www.paypal.com/slack/#about
-
-Based on Wirify 
-- I could not access it
-
-https://www.paypal.com/slack/#about - Actual Layout
-
-- header1 with logo on left and login on right
-- image background with header / paragraph / button on the left side (split whole block in half, then center left side)
-- navigation below background image that links the remaining page (3 links 3 remaining blocks)
-
-- First Section 
-	- medium header and paragraph on left side
-	- image on the rigth side
-
-- Next Section 
-	- centered information with title (with spacing at the bottom to separate it from below paragraphs) / 3 paragraphs with padded color in background with text and margin top/right/bottom with some spacing given for the text
-
-- Third Section
-	- centered Title / 3 list items in same column / button 
-
-- footer 
-	- links
-	- copyright / company name or logo name / privacy link / legal link
-
-
-
-************************** Lion bot Website ***************************************
-https://lion-bot.herokuapp.com/ 
-
-Actual Layout and Wirify layout viewr
-
-- giant image takes up left and right sides of header, with header1 and 3 paragraphs 
-and button below
-- Screenshot image of activity the bot can do  with paragraph on right hand side
-- header / paragraph / list of 5 unordered lists without buttons or any type like that
-
-- footer with logo and works and link
-
-
-
-
-************************** MDN bot Website ***************************************
-https://vejather.github.io/mdn-bot-landing-page/
-
-https://vejather.github.io/mdn-bot-landing-page/ 
-
-Actual Layout and Wirify layout viewer
-
-- header has image on left and header / span / image w/ anchor tag / link drectly attached below the header
-- 3 paragraphs with image w/ anchor tag on left / image on right
-- header2 (centered) same line with image on imediate right side.  looks like they are z-indexed with header on top
-- may be the same section as above...  few paragraphs on the left, header4 or 5, a few paragraphs with secial features as if defined area with definition 
-
-- footer link button and logo image left side / header4 and social media links right side
-
-
-
-
-
-
-************************** fireflies Website ***************************************
-https://fireflies.ai/
-
-<header> see through at the top (fixed)...  (I have to continue looking over website for ideas)
-
-
-
-
-********************* CLAUDIA BOT BUILDER Website *************************************
-https://claudiajs.com/claudia-bot-builder.html
-
-...
-
--->
-
 </head>
 <body>
 <div id="container">
-
+  
 <header>
 <nav>
 	<!-- Logo on the left side and links on the right, or in a sense of the splash bot page landing page.  The bot on the right and the name  -->
-	<img src="#" alt="" /> 
+	<img id="imgHeader" src="#" alt="" />
 
 
 	<!-- Tagline (I seen it created as a span somewhere, but can be changed) -->
-	<span>SpartanAssist,  a message scheduler and meeting assistant bot</span>
+	<h1 class="headerTitle">SpartanAssist</h1>
+	<p id="tagline">A "message scheduler" and "meeting assistant" slackbot</p>
+	<button id="headerButton">Add to Slack</button>
 
 </nav>
 </header>
 
 <section>
 	<!-- It's good to have an alt attribute for non image browser and I still think even for SEO (left side) -->
-	<img src="#" alt="" /> 
+	<img src="#" alt="" />
 
 
 	<h1>Welcome to SpartanBot Page</h1>
-	<p>I put in laurum ipsum to fill this in, we can figure out what to fill this in with as we get further in details.</p>
+
+	<p>Have you used todoList apps before? </p>
+
+	<p>The slack app directories already have a lot todo list apps.  SpartanBot is a special creation based on end users practice(s).  It's definitely a problem worth sloving.
+	</p>
+
+	<!-- This thought still in mind as I wrote this paragraph:
+
+	My thoughts were that the separate companies deliberately did that to "make money" in that sense of customer not being satisfied with one app and turned to another and started comparing and using the different apps to see which one is/was better  -->
+	<p>Was there an app that had one function that the other had and vice versa.  The apps were incomplete (in that sense).  SpartanBot helps as it is an additional creation to the overall puzzle piece for what we call life and how we can function with tools at hand.  </p>
+
+	<h1>We built a bot that mimics a normal physical meeting sturcture</h1>
+	<h3>automatic note taking functions</h3>
+	<p>So usually, in a meeting, people take turns to speak and share ideas and follow a process/structure or procedure. On a text based medium like we are doing, everyone is just kind of typing whenever they have anything to say meanwhile it is likely that other ideas have not even been digested yet.</p>
+	<p>eg. you if you have anything to say you press a button or raise your hand and everyone gives you a chance to get your point across or something along those lines</p>
+	<p>say if you want a certain message to be recorded, you reply that message with a reaction like this :heavy_check_mark:  , then SpartanBot will automatically add it to a note.</p>
+
+	<p>we all pay attention to one person to get their point across it would be more productive vs running the entire meeting like a brainstorming session even though it could be a part of subsection of it </p>
+	<p>like specific roles, leaders, facilitators, and other techniques that help optimize meetings and stuff</p>
+
+
+	<button>Add to Slack</button>
 </section>
 
 
-<!-- 	
-Additional Header / list if needed
-<section>
-	<h3></h3>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</section>
-
--->
-
-
-
-
-<!-- 
+<!--
 This section is from the app page where the bot was created.  I put it all in a section for now...
 
-looking to make it similar to the api website that has the app: 
+looking to make it similar to the api website that has the app:
 https://api.slack.com/apps/A4Q27TTRA/
 -->
+
+
+
+<!--
+This may go on either side left or right, maybe equivalent to side by side with above section
+
+how to use the bot 
+
+the idea should focus on what type of problem you intend to solve. 
+
+as each program should have a purpose and ideally solve a reality problem / a problem to solve
+
+
+
+interactivity and functionality sides 
+
+
+
+-->
+<aside>
+	<h3>Featured use of SpartanBot (Bot Ideas)</h3>
+
+	<ul>
+		<li>1. message scheduler</li>
+			<ul>
+				<li>Productivity</li> 
+				<ul>
+					<li>Think about the things you want to do within slack.  Does slack have that function yet?</li>
+					<li>Manage your message history or bookmarking / note taking </li>
+				</ul>
+
+				<li>Scheduling</li>
+					<ul>
+					<li>Scheduling messages</li>
+						<ul>
+							<li>Save for later</li>
+							- making it easier to catch up on past conversation
+
+							<li>Set up basic steps and criteria</li>
+							- creating an easier way to run meetings on slack
+						</ul>
+					</ul>
+			</ul>
+
+		<li>2. quora integration </li>
+		
+		<li>3. Have SpartanBot set a user statement as a "read it later"</li>
+		
+		<li>4. Create w/ SpartanBot a project deadline countdown</li>
+		
+		<li>5. Vybe with SpartanBot with your favorite music within spotify(or other music api) integration</li>
+	</ul>
+	
+	<!-- Other ideas
+	only enable one person texting at a time in slack 
+	- so everyone can actually pay attention to that person and bookmark specific topics or aspects of the messages to be in the note? 
+	- somewhere in the slack api page there's a delay function on sending message.
+	
+
+	I would love to combine them together. or we can start with something and keep those other features in mind and add them later 
+
+	 -->
+</aside>
+
+
 <section>
 
 	<h1>App Name: SpartanAssist</h1>
 	<h3>A message scheduler and meeting assistant bot</h3>
 
-	<h5>Team: SpartanBots</h5>
-	<h5>Distribution Status: Not distributed</h5>
-
-	<h1>Settings</h1>
-	Basic Information
 
 
-	<h3>Colaborators</h3>
-	<ul>
-	<li>Frances</li>
-	<li>Sadiq Abubakar</li>
-	<li>Kingsley Cross</li>
-	</ul>
-
-
-	<a href="https://slack.com/oauth/authorize?&client_id=160073494036.160075945860&team=T4Q25EJ12&install_redirect=install-on-team&scope=incoming-webhook,bot,commands,chat:write:bot" class="button">Install App to Your Team</a>
+	<a href="https://slack.com/oauth/authorize?&client_id=160073494036.160075945860&team=T4Q25EJ12&install_redirect=install-on-team&scope=incoming-webhook,bot,commands,chat:write:bot" class="button">Install App <br/> to Your Team</a>
 	<p>Install your app to your Slack team to test your app and generate the tokens you need to interact with the Slack API. You will be asked to authorize this app after clicking Install App to Team.</p>
 
 	<h4>Distribution</h4>
 	<p>Share app with team / other teams</p>
 
 
-	<h1>Features</h1>
-
-
 </section>
 
 
 
-<!--  
-This may go on either side left or right, maybe equivalent to side by side with above section
--->
-<aside>	
-	<h3>The use of Spartan Bot (Bot Ideas)</h3>
-	<li>1. message scheduler</li>
-	<li>2. quora integration </li>
-	<li>3. read it later</li>
-	<li>4. project deadline countdown</li>
-	<li>5. spotify(or other music api) integration</li>
-</aside>
-
-
-
-
-
-
 <footer class="top">
-	<h3>FOLLOW US</h3>
-	<li><a href="#"><img src="#" />RSS Feed</a></li>
-	<li><a href="#"><img src="#" />Twitter</a></li>
-	<li><a href="#"><img src="#" />LinkedIn</a></li>
-	<li><a href="#"><img src="#" />Facebook</a></li>
-	<li><a href="#"><img src="#" />GooglePlus</a></li>
-</footer>
-
-
-<footer class="bottom">
 	<nav>
 		<a href="#">Terms of Use</a> |
 		<a href="#">Privacy Policy</a> |
 		<a href="#">Etc</a> |
 		<a href="#">Etc</a>
 	</nav>
+</footer>
 
-	<p>&copy; 2017 Spartan Bot - Koalas - splashPage-team-9</p>
+
+
+<!-- This will float to the right side -->
+<footer class="bottom">
+	<section>
+		<h3>Colaborators</h3>
+
+		<ul>
+		<li>Frances</li>
+		<li>Sadiq</li>
+		<li>Kingsley</li>
+		</ul>
+	</section>
+
+	<nav>
+		<h3>FOLLOW US</h3>
+		<li><a href="#"><img src="#" />RSS Feed</a></li>
+		<li><a href="#"><img src="#" />Twitter</a></li>
+		<li><a href="#"><img src="#" />LinkedIn</a></li>
+		<li><a href="#"><img src="#" />Facebook</a></li>
+		<li><a href="#"><img src="#" />GooglePlus</a></li>
+	</nav>
+
+
+
+	<p>&copy; 2017 Team: SpartanBot - Chingu-Koalas - splashPage-team-9</p>
+
+
 </footer>
 </div> <!-- end of div container -->
 </body>
